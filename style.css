@@ -1,0 +1,286 @@
+
+html{
+  margin: 0;
+      height: 100%;
+}
+  body {
+    /* min-height: 100vh; */
+  /* margin: 0; */
+  /* width: 100%;
+   height: 1000px; */
+   /* background-image: url('https://thao-nguyen-design.github.io/project-1-emulation/background.png'); */
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   /* border: 1px solid red; */
+
+}
+
+canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.canvasClass {
+  width: 100%;
+  height: 100%;
+}
+
+
+header {
+  padding-top: 18%;
+  /* background-image: url('https://thao-nguyen-design.github.io/project-1-emulation/background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  /* background-color: #79B791; */
+}
+
+
+.title-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+.text-container {
+  /* padding: 40px; */
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+
+/* #title {
+font-size: 5rem;
+  color: white;
+  font-family: 'Megrim', cursive;
+animation: glow 2s ease-in-out infinite alternate; */
+  /* margin-top: 0px; */
+  /* margin-bottom: 35px; */
+/* } */
+
+
+.title {
+  /* position: absolute; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* width: 50%;
+  height: 50%; */
+  /* background-image: radial-gradient(
+    ellipse 50% 25% at 50% 50%,
+    #6b1839,
+    transparent
+  ); */
+  /* transform: translate(-50%, -50%); */
+  /* letter-spacing: 2; */
+  left: 50%;
+  top: 50%;
+  font-family: "Megrim";
+  /* text-transform: uppercase; */
+  font-size: 6em;
+  color: white;
+  /* text-shadow: 0 0 0.4rem #1d136a, 0 0 1rem #1d136a,
+    -0.2rem 0.1rem 1rem #1d136a, 0.2rem 0.1rem 1rem #1d136a,
+    0 -0.3rem 1.5rem #1d136a, 0 0.5rem 2rem #1d136a; */
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: white;
+    text-shadow: 0 0 0.3rem #bfdbf7, 0 0 1rem #bfdbf7,
+      -0.1rem 0.1rem 1rem #bfdbf7, 0.2rem 0.1rem 0.5rem #bfdbf7,
+      0 -0.3rem 1rem #bfdbf7, 0 0.4rem 2rem #bfdbf7;
+  }
+  28%,
+  33% {
+    color: white;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #bfdbf7;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: white;
+    text-shadow: 0 0 0.6rem #bfdbf7, 0 0 1.5rem #bfdbf7,
+      -0.2rem 0.1rem 1rem #bfdbf7, 0.2rem 0.1rem 1rem #bfdbf7,
+      0 -0.5rem 2rem #bfdbf7, 0 0.5rem 3rem #bfdbf7;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+#subtitle{
+  font-size: 1.5em;
+  color: white;
+font-family: 'MuseoModerno', cursive;}
+
+#text {
+  font-size: 1em;
+  color: white;
+  font-family: 'MuseoModerno', cursive;
+  /* margin-top: 0px; */
+  /* margin-bottom: 35px; */
+}
+
+a:link
+{color:white;
+  text-decoration:none;}
+
+a:visited
+{color:white;
+  text-decoration:none;}
+
+a:hover {text-decoration:
+
+underline;}
