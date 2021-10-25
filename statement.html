@@ -3,66 +3,93 @@
 
 <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- load js and css files    -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- load js and css files    -->
+  <link rel="stylesheet" href="style.css" />
+
+  <div class="canvasClass" id="canvasDiv">
+    <script src="background.js"></script>
+    <script src="star.js"></script>
+  </div>
+
+  <!-- load p5js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" integrity="sha512-w1Bktzax55ZbjW5Mqjz8+mKz4KqRjEUU35Dpq/ath29yskKqIGwNIHiFNp03m/OiJWDXvdQ1/g6aV+l4PeVO7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
 
 
-    <div class="canvasClass" id="canvasDiv">
-      <script src="background.js"></script>
-      <script src="star.js"></script>
-    </div>
+  <!-- load fonts -->
+  <!-- subtitle font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
-    <!-- load p5js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" integrity="sha512-w1Bktzax55ZbjW5Mqjz8+mKz4KqRjEUU35Dpq/ath29yskKqIGwNIHiFNp03m/OiJWDXvdQ1/g6aV+l4PeVO7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+  <!-- text font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-
-<!-- load fonts -->
-<!-- title font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Tourney:wght@900&display=swap" rel="stylesheet">
-
-<!-- text font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
-
-    <title>Space Emulation - Artist Statement </title>
+  <title>Space Emulation - Artist Statement </title>
 
 </head>
 
-  <body>
+<body>
 
-    <header>
-      <div class="title-container">
-        <div class="title">
-              <span class="fast-flicker">Art</span>ist
-              <span class="flicker">sta</span>tement
+  <div class="title2-container">
 
-            </div>
+    <h2 id="title2">Artist Statement</h2>
 
+  </div>
+
+  <div class="text-container">
+
+    <p id="text">
+      Growing up, I often experienced the feeling of disconnect from reality.
+      During those time, I would imagine myself as an atom floating in the void of space,
+      submerge in the quietness, completely unbound.
+      <br>
+      <br>
+
+      The place where the silence is so loud that I can no longer hear the voice inside my head.
+      <br>
+      Where there is nowhere to go, but I can go anywhere.
+      <br>
+      Where everything ends, and begins.
+      <br>
+      <br>
+      In this project, I made a space-inspired emulation. The site is built using HTML/CSS, while the interactivity and animation is created using the p5.js library.
+      <br>
+
+      You are welcome to use the site in whichever way you need – playing around with the interaction,
+      gazing at the animation of stars passing by,
+      or just let it runs in the background while you study.
+
+      <br>
+      <br>
+
+      I hope you find some resemblance of peace here.
+      <br>
+      <br>
+      <br>
+
+    </p>
+
+    <div class="link-container">
+
+      <div class="bottomright">
+        <a id="text" target="_self" href="https://thao-nguyen-design.github.io/project-2/script/index.html"> > Start exploring</a>
+        <br>
+        <a id="text" target="_self" href="https://thao-nguyen-design.github.io/project-2/index.html"> > Back to Home</a>
       </div>
-    </header>
 
-
-    <div class="text-container">
-      <h2 id="subtitle">Ready to take a trip?</h2>
-<p id="text">
-      <a id="text" target="_self" href="https://thao-nguyen-design.github.io/project-1-emulation/mode1/">Start exploring</a>
-
-or
-      <a id="text" target="_self" href="https://thao-nguyen-design.github.io/project-1-emulation/mode2/">View artist statement</a>
-
-</p>
     </div>
 
+  </div>
 
-  </body>
+
+</body>
 
 </html>

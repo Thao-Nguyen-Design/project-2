@@ -1,46 +1,6 @@
 html, body {}
 
 h1 {
-  font-size: 40px;
-  color: white;
-  margin-left: 30px;
-  font-family: Trebuchet MS;
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
-
-#one {
-  font-size: 16px;
-  color: white;
-  font-family: Trebuchet MS;
-  margin-left: 30px;
-  margin-bottom: 35px;
-}
-
-#two {
-  text-align: left;
-  font-size: 16px;
-  color: white;
-  font-family: Trebuchet MS;
-  margin-top: 15px;
-  /* margin-left: 10px; */
-  margin-bottom: 20px;
-}
-
-.noselect {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-  supported by Chrome and Opera */
 }
 
 canvas {
@@ -50,103 +10,56 @@ canvas {
   z-index: -1;
 }
 
-.buttonClass {
-  margin-top: -10px;
-  margin-left: 30px;
-  text-align: center;
-  display: inline-block;
+.text-container {
+  /* padding: 40px; */
+  position: absolute;
+  bottom: 1.8em;
+  right: 4.5em;
 }
 
-.saveButton {
-  border: 5px solid white;
-  background-color: transparent;
+#text {
+  font-size: 1em;
   color: white;
-  border-radius: 8px;
-  padding: 8px 18px;
-  font-size: 16px;
-  opacity: 0.7;
-  /* margin-left: 25px; */
-  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  /* margin-top: 0px; */
+  /* margin-bottom: 35px; */
 }
 
-.saveButton:hover {
-  opacity: 1;
-}
+a:link
+{color:white;
+  text-decoration:none;}
 
-.clearButton {
-  border-radius: 8px;
-  border: 5px solid white;
+a:visited
+{color:white;
+  text-decoration:none;}
+
+a:hover {text-decoration:
+
+underline;}
+
+.alert {
+  padding: 0.8em;
   background-color: transparent;
+  border: white;
+  border-style: solid;
+  font-family: 'MuseoModerno', cursive;
   color: white;
-  padding: 8px 18px;
-  font-size: 16px;
-  margin-left: 10px;
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.clearButton:hover {
   opacity: 1;
+  transition: opacity 0.6s;
+margin: 2.2em 15% 0% 15%;
 }
 
-.strokeSlider {
-  -webkit-appearance: none;
-  width: 170px;
-  height: 12px;
-  background: transparent;
-  outline: none;
-  border: 5px solid white;
-  border-radius: 8px;
-}
-
-.strokeSlider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 40px;
-  background: white;
+.closebtn {
+  /* margin-top: 15px; */
+  color: white;
+  /* font-weight: bold; */
+  float: right;
+  font-size: 1.5em;
+  line-height: 1.1em;
   cursor: pointer;
-  border: 5px solid white;
-  border-radius: 4px;
+  transition: 0.3s;
 }
 
-.symmetrySlider {
-  -webkit-appearance: none;
-  /* margin-left: 25px; */
-  /* margin-bottom: 25px; */
-  width: 170px;
-  height: 12px;
-  background: transparent;
-  outline: none;
-  border: 5px solid white;
-  border-radius: 8px;
-}
-
-.symmetrySlider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 40px;
-  background: white;
-  cursor: pointer;
-  border: 5px solid white;
-  border-radius: 8px;
-}
-
-.slider1 {
-  margin-left: 30px;
-  opacity: 0.7;
-}
-
-.slider1:hover {
-  opacity: 1;
-}
-
-.slider2 {
-  margin-left: 30px;
-  opacity: 0.7;
-}
-
-.slider2:hover {
-  opacity: 1;
+.closebtn:hover {
+  color: #3ea7e8;
 }

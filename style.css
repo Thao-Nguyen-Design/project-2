@@ -1,18 +1,18 @@
-
-html{
-  margin: 0;
-      height: 100%;
+html {
+  /* margin: 0; */
+  /* height: 100%; */
 }
-  body {
-    /* min-height: 100vh; */
+
+body {
+  /* min-height: 100vh; */
   /* margin: 0; */
   /* width: 100%;
    height: 1000px; */
-   /* background-image: url('https://thao-nguyen-design.github.io/project-1-emulation/background.png'); */
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   /* border: 1px solid red; */
-
+  /* background-image: url('https://thao-nguyen-design.github.io/project-1-emulation/background.png'); */
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  /* text-align: center; */
+  /* border: 1px solid red; */
 }
 
 canvas {
@@ -22,75 +22,48 @@ canvas {
   z-index: -1;
 }
 
-.canvasClass {
-  width: 100%;
-  height: 100%;
-}
-
-
-header {
-  padding-top: 18%;
-  /* background-image: url('https://thao-nguyen-design.github.io/project-1-emulation/background.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
-  /* background-color: #79B791; */
-}
-
-
 .title-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  margin: auto;
+  width: 100%;
   text-align: center;
-  width: 75%;
+  padding-top: 12%;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+.subtitle-container {
+  width: 100%;
+  margin: 0;
+  /* padding-top: 10px; */
+  /* padding-bottom: 20px; */
+  text-align: center
+  /* width: 100%; */
+}
+
+.title2-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0.5em;
+  margin: 0;
 }
 
 .text-container {
   /* padding: 40px; */
   margin: auto;
-  text-align: center;
-  width: 75%;
+  text-align: left;
+  width: 50%;
 }
 
 
-/* #title {
-font-size: 5rem;
-  color: white;
-  font-family: 'Megrim', cursive;
-animation: glow 2s ease-in-out infinite alternate; */
-  /* margin-top: 0px; */
-  /* margin-bottom: 35px; */
-/* } */
-
-
 .title {
-  /* position: absolute; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* width: 50%;
-  height: 50%; */
-  /* background-image: radial-gradient(
-    ellipse 50% 25% at 50% 50%,
-    #6b1839,
-    transparent
-  ); */
-  /* transform: translate(-50%, -50%); */
-  /* letter-spacing: 2; */
-  left: 50%;
-  top: 50%;
   font-family: "Megrim";
-  /* text-transform: uppercase; */
-  font-size: 6em;
+  font-size: 6.7em;
   color: white;
-  /* text-shadow: 0 0 0.4rem #1d136a, 0 0 1rem #1d136a,
-    -0.2rem 0.1rem 1rem #1d136a, 0.2rem 0.1rem 1rem #1d136a,
-    0 -0.3rem 1.5rem #1d136a, 0 0.5rem 2rem #1d136a; */
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
 @keyframes blink {
+
   0%,
   22%,
   36%,
@@ -100,14 +73,16 @@ animation: glow 2s ease-in-out infinite alternate; */
       -0.1rem 0.1rem 1rem #bfdbf7, 0.2rem 0.1rem 0.5rem #bfdbf7,
       0 -0.3rem 1rem #bfdbf7, 0 0.4rem 2rem #bfdbf7;
   }
+
   28%,
   33% {
     color: white;
     text-shadow: none;
   }
+
   82%,
   97% {
-    color: #bfdbf7;
+    color: white;
     text-shadow: none;
   }
 }
@@ -125,6 +100,7 @@ animation: glow 2s ease-in-out infinite alternate; */
     color: white;
     text-shadow: none;
   }
+
   100% {
     color: white;
     text-shadow: 0 0 0.6rem #bfdbf7, 0 0 1.5rem #bfdbf7,
@@ -260,27 +236,55 @@ animation: glow 2s ease-in-out infinite alternate; */
 }
 
 
-#subtitle{
+#subtitle {
   font-size: 1.5em;
   color: white;
-font-family: 'MuseoModerno', cursive;}
+  line-height: 1.7;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+#title2 {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  font-size: 2.3em;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
 
 #text {
   font-size: 1em;
+  line-height: 1.5;
   color: white;
-  font-family: 'MuseoModerno', cursive;
+font-family: 'Montserrat', sans-serif;
   /* margin-top: 0px; */
   /* margin-bottom: 35px; */
 }
 
-a:link
-{color:white;
-  text-decoration:none;}
+.link-container {
+  position: relative;
+  /* margin-top: 0px; */
+  /* margin-bottom: 35px; */
+}
 
-a:visited
-{color:white;
-  text-decoration:none;}
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
 
-a:hover {text-decoration:
+a:link {
+  color: white;
+  text-decoration: none;
+}
 
-underline;}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:
+    underline;
+}
